@@ -1,11 +1,10 @@
 package com.dtorrez.set;
 
-import java.util.ArrayList;
-import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.TreeSet;
 
-public class Main1 {
+public class Main3 {
     /*
     collecion: es un grupo de elemetnos (hay repetido)
     set: un conjunto limita los elementos (no hay repetido) (aplica el metodo hasCode())
@@ -14,11 +13,14 @@ public class Main1 {
         lo calcula atraves del hasCode() y hace uso del operador % modulo, va agrupando por multiplos comunes (en listas)
            - butcket: o taza se van generando segun llega los elemento y usando el hasCode() y operador modulo
             https://cursos.arquitecturajava.com/courses/1997283/lectures/45143938
+
+       - TreeSet:  Es un conjunto de elemento que sigue un orden
+
     */
     public static void main(String[] args) {
         System.out.println("Main1");
 //        Collection<String> lista = new ArrayList<>();
-        Set<String> lista = new HashSet<>();
+        Set<String> lista = new TreeSet<String>();
         lista.add("Hola");
         lista.add("que");
         lista.add("tal");

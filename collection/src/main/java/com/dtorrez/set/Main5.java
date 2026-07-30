@@ -1,11 +1,8 @@
 package com.dtorrez.set;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
-public class Main1 {
+public class Main5 {
     /*
     collecion: es un grupo de elemetnos (hay repetido)
     set: un conjunto limita los elementos (no hay repetido) (aplica el metodo hasCode())
@@ -16,23 +13,19 @@ public class Main1 {
             https://cursos.arquitecturajava.com/courses/1997283/lectures/45143938
     */
     public static void main(String[] args) {
-        System.out.println("Main1");
+        System.out.println("Main5");
 //        Collection<String> lista = new ArrayList<>();
-        Set<String> lista = new HashSet<>();
-        lista.add("Hola");
-        lista.add("que");
-        lista.add("tal");
-        lista.add("estas");
-        lista.add("tu");
-        lista.add("hoy");
-        // no se agrega en un conjunto valores repetido
-        lista.add("pues");
-        lista.add("hoy");
+//        Set<Persona> lista = new TreeSet<>(new ComparatorNombre());
+        Set<Persona> lista = new TreeSet<>(new ComparatorDni());
 
+        Persona p1 = new Persona("1", "juan", 23);
+        lista.add(p1);
+        lista.add(new Persona("2", "david", 20));
+        lista.add(new Persona("3", "ana", 25));
+        lista.add(new Persona("4", "gema", 30));
 
-        for (String texto: lista) {
-            System.out.println(texto);
+        for (Persona texto: lista) {
+            System.out.println(texto.getNombre());
         }
-
     }
 }
