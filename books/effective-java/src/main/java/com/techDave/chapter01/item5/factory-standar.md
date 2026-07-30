@@ -1,0 +1,1 @@
+# Uso moderno: Supplier<T>
