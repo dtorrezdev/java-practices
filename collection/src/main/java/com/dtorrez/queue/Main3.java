@@ -3,9 +3,8 @@ package com.dtorrez.queue;
 import java.util.Deque;
 import java.util.LinkedList;
 
-
-
 public class Main3 {
+
     public static void main(String[] args) {
         Deque<Persona> pila = new LinkedList<>();
         pila.offerFirst(new Persona("4", "Maria", 40,5));
