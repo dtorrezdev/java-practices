@@ -36,7 +36,6 @@ public class Main6 {
 //        for (Persona texto: conjunto.tailSet(new Persona("2"))) {
         for (Persona texto: conjunto.headSet(new Persona("3"))) {
                 System.out.println(texto.getNombre());
-
         }
     }
 }
